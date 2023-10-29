@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="clock__cont">
+        <div class="clock__group">
+            <div class="clock" id="clock1">
+                <div class="clock__arrow clock__arrow1"><div class="clock__arrow__item"></div></div>
+                <div class="clock__arrow clock__arrow2"><div class="clock__arrow__item"></div></div>
+                <div class="clock__arrow clock__arrow3"><div class="clock__arrow__item"></div></div>
+            </div>
+            <div class="clock__group__inputs">
+                <input type="number" name="hours1" id="hours1" value="0">
+                <input type="number" name="min1" id="min1" value="0">
+                <input type="number" name="sec1" id="sec1" value="0">
+            </div>
+        </div>
+        <select name="clockact" id="clockact">
+            <option value="+">+</option>
+            <option value="-">-</option>
+        </select>
+        <div class="clock__group">
+            <div class="clock" id="clock2">
+                <div class="clock__arrow clock__arrow1"><div class="clock__arrow__item"></div></div>
+                <div class="clock__arrow clock__arrow2"><div class="clock__arrow__item"></div></div>
+                <div class="clock__arrow clock__arrow3"><div class="clock__arrow__item"></div></div>
+            </div>
+            <div class="clock__group__inputs">
+                <input type="number" name="hours2" id="hours2" value="0">
+                <input type="number" name="min2" id="min2" value="0">
+                <input type="number" name="sec2" id="sec2" value="0">
+            </div>
+        </div>
+        <p>=</p>
+        <div class="clock" id="clock3">
+            <div class="clock__arrow clock__arrow1"><div class="clock__arrow__item"></div></div>
+            <div class="clock__arrow clock__arrow2"><div class="clock__arrow__item"></div></div>
+            <div class="clock__arrow clock__arrow3"><div class="clock__arrow__item"></div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

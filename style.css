@@ -1,0 +1,74 @@
+.clock {
+    border: 5px solid black;
+    border-radius: 300px;
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    background-image: url(clock.png);
+    background-size: 101%;
+    background-position: center;
+    position: relative;
+}
+.clock__arrow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.clock__arrow .clock__arrow__item {
+    position: absolute;
+    width: 2%;
+    background-color: black;
+    left: calc(50% - 1%);
+}
+.clock__arrow1 .clock__arrow__item {
+    height: 23%;
+    top: calc(50% - 23%);
+}
+.clock__arrow1 { 
+    /*transform: rotate(60deg); */
+    z-index: 1;
+}
+.clock__arrow2 .clock__arrow__item {
+    height: 32%;
+    top: calc(50% - 32%);
+}
+.clock__arrow2 { 
+    transform: rotate(40deg); 
+    z-index: 1;
+}
+.clock__arrow3 .clock__arrow__item {
+    width: 1.5%;
+    height: 35%;
+    top: calc(50% - 35%);
+    left: calc(50% - 0.5%);
+    background-color: red;
+}
+.clock__arrow3 { 
+    transform: rotate(0deg); 
+    z-index: 0;
+}
+.clock__cont {
+    display: flex;
+    align-items: center;
+}
+.clock__cont select {
+    font-size: 20px;
+}
+.clock__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+.clock__group__inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.clock__group__inputs input {
+    width: 33%;
+    display: flex;
+}
+#clock3 {
+    margin-left: 20px;
+}
